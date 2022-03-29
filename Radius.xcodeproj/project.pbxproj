@@ -1,0 +1,876 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		67C59CAEA85806E1C13C91DB /* Pods_Radius.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2F628BBD45DAC3C22746C4 /* Pods_Radius.framework */; };
+		DAC1CF43D7402837BB72ECF9 /* Pods_Radius_RadiusUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB7ABA9E482F5E10CEC35DBC /* Pods_Radius_RadiusUITests.framework */; };
+		E1560AB727F310290039B80F /* PropertiesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1560AB527F310290039B80F /* PropertiesTableViewCell.swift */; };
+		E1560AB827F310290039B80F /* PropertiesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1560AB627F310290039B80F /* PropertiesTableViewCell.xib */; };
+		E1560ABA27F31C080039B80F /* TableView+ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1560AB927F31C080039B80F /* TableView+ViewController.swift */; };
+		E1560ABD27F32DB60039B80F /* CustomHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1560ABC27F32DB60039B80F /* CustomHeaderView.swift */; };
+		E1560ABF27F32DC40039B80F /* CustomHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1560ABE27F32DC40039B80F /* CustomHeaderView.xib */; };
+		E1D9556D27F1CE1A004F8FA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9556C27F1CE1A004F8FA5 /* AppDelegate.swift */; };
+		E1D9556F27F1CE1A004F8FA5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9556E27F1CE1A004F8FA5 /* SceneDelegate.swift */; };
+		E1D9557127F1CE1A004F8FA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9557027F1CE1A004F8FA5 /* ViewController.swift */; };
+		E1D9557427F1CE1A004F8FA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D9557227F1CE1A004F8FA5 /* Main.storyboard */; };
+		E1D9557727F1CE1A004F8FA5 /* Radius.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1D9557527F1CE1A004F8FA5 /* Radius.xcdatamodeld */; };
+		E1D9557927F1CE1C004F8FA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1D9557827F1CE1C004F8FA5 /* Assets.xcassets */; };
+		E1D9557C27F1CE1C004F8FA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1D9557A27F1CE1C004F8FA5 /* LaunchScreen.storyboard */; };
+		E1D9558727F1CE1D004F8FA5 /* RadiusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9558627F1CE1D004F8FA5 /* RadiusTests.swift */; };
+		E1D9559127F1CE1D004F8FA5 /* RadiusUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9559027F1CE1D004F8FA5 /* RadiusUITests.swift */; };
+		E1D9559327F1CE1D004F8FA5 /* RadiusUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9559227F1CE1D004F8FA5 /* RadiusUITestsLaunchTests.swift */; };
+		E1D955A027F1CE5E004F8FA5 /* PropertiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D9559F27F1CE5E004F8FA5 /* PropertiesModel.swift */; };
+		E1D955A227F1CE6A004F8FA5 /* PropertiesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D955A127F1CE6A004F8FA5 /* PropertiesViewModel.swift */; };
+		E1D955AA27F22AA8004F8FA5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D955A927F22AA8004F8FA5 /* NetworkManager.swift */; };
+		F82D9287047AE940EF044E6D /* Pods_RadiusTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFCD3D61B183B426BB99F77D /* Pods_RadiusTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1D9558327F1CE1D004F8FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D9556127F1CE1A004F8FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D9556827F1CE1A004F8FA5;
+			remoteInfo = Radius;
+		};
+		E1D9558D27F1CE1D004F8FA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1D9556127F1CE1A004F8FA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1D9556827F1CE1A004F8FA5;
+			remoteInfo = Radius;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0738DE700329CF8E0EBC3456 /* Pods-Radius.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radius.debug.xcconfig"; path = "Target Support Files/Pods-Radius/Pods-Radius.debug.xcconfig"; sourceTree = "<group>"; };
+		246EEFCFD93ECE2914256C02 /* Pods-Radius.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radius.release.xcconfig"; path = "Target Support Files/Pods-Radius/Pods-Radius.release.xcconfig"; sourceTree = "<group>"; };
+		4ABA3A789EDE8207A95CF7AC /* Pods-Radius-RadiusUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radius-RadiusUITests.release.xcconfig"; path = "Target Support Files/Pods-Radius-RadiusUITests/Pods-Radius-RadiusUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81CEE530A7A7B232B2F4E7CD /* Pods-RadiusTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadiusTests.debug.xcconfig"; path = "Target Support Files/Pods-RadiusTests/Pods-RadiusTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB7ABA9E482F5E10CEC35DBC /* Pods_Radius_RadiusUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Radius_RadiusUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7BAECF54F6CBC5C4B9EB66A /* Pods-RadiusTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RadiusTests.release.xcconfig"; path = "Target Support Files/Pods-RadiusTests/Pods-RadiusTests.release.xcconfig"; sourceTree = "<group>"; };
+		DEE3D85C55CED22E1A83B336 /* Pods-Radius-RadiusUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Radius-RadiusUITests.debug.xcconfig"; path = "Target Support Files/Pods-Radius-RadiusUITests/Pods-Radius-RadiusUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DFCD3D61B183B426BB99F77D /* Pods_RadiusTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RadiusTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1560AB527F310290039B80F /* PropertiesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesTableViewCell.swift; sourceTree = "<group>"; };
+		E1560AB627F310290039B80F /* PropertiesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PropertiesTableViewCell.xib; sourceTree = "<group>"; };
+		E1560AB927F31C080039B80F /* TableView+ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableView+ViewController.swift"; sourceTree = "<group>"; };
+		E1560ABC27F32DB60039B80F /* CustomHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeaderView.swift; sourceTree = "<group>"; };
+		E1560ABE27F32DC40039B80F /* CustomHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeaderView.xib; sourceTree = "<group>"; };
+		E1D9556927F1CE1A004F8FA5 /* Radius.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Radius.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D9556C27F1CE1A004F8FA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E1D9556E27F1CE1A004F8FA5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E1D9557027F1CE1A004F8FA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E1D9557327F1CE1A004F8FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E1D9557627F1CE1A004F8FA5 /* Radius.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Radius.xcdatamodel; sourceTree = "<group>"; };
+		E1D9557827F1CE1C004F8FA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E1D9557B27F1CE1C004F8FA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E1D9557D27F1CE1C004F8FA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1D9558227F1CE1D004F8FA5 /* RadiusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D9558627F1CE1D004F8FA5 /* RadiusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusTests.swift; sourceTree = "<group>"; };
+		E1D9558C27F1CE1D004F8FA5 /* RadiusUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RadiusUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D9559027F1CE1D004F8FA5 /* RadiusUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusUITests.swift; sourceTree = "<group>"; };
+		E1D9559227F1CE1D004F8FA5 /* RadiusUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E1D9559F27F1CE5E004F8FA5 /* PropertiesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesModel.swift; sourceTree = "<group>"; };
+		E1D955A127F1CE6A004F8FA5 /* PropertiesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertiesViewModel.swift; sourceTree = "<group>"; };
+		E1D955A927F22AA8004F8FA5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		ED2F628BBD45DAC3C22746C4 /* Pods_Radius.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Radius.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E1D9556627F1CE1A004F8FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C59CAEA85806E1C13C91DB /* Pods_Radius.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D9557F27F1CE1D004F8FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82D9287047AE940EF044E6D /* Pods_RadiusTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D9558927F1CE1D004F8FA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC1CF43D7402837BB72ECF9 /* Pods_Radius_RadiusUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2823D0D77438D735474ACF4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ED2F628BBD45DAC3C22746C4 /* Pods_Radius.framework */,
+				CB7ABA9E482F5E10CEC35DBC /* Pods_Radius_RadiusUITests.framework */,
+				DFCD3D61B183B426BB99F77D /* Pods_RadiusTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3EF09DBF11D719E80F983224 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0738DE700329CF8E0EBC3456 /* Pods-Radius.debug.xcconfig */,
+				246EEFCFD93ECE2914256C02 /* Pods-Radius.release.xcconfig */,
+				DEE3D85C55CED22E1A83B336 /* Pods-Radius-RadiusUITests.debug.xcconfig */,
+				4ABA3A789EDE8207A95CF7AC /* Pods-Radius-RadiusUITests.release.xcconfig */,
+				81CEE530A7A7B232B2F4E7CD /* Pods-RadiusTests.debug.xcconfig */,
+				D7BAECF54F6CBC5C4B9EB66A /* Pods-RadiusTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E1560ABB27F31C480039B80F /* TableView Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E1560AB527F310290039B80F /* PropertiesTableViewCell.swift */,
+				E1560AB627F310290039B80F /* PropertiesTableViewCell.xib */,
+				E1560ABC27F32DB60039B80F /* CustomHeaderView.swift */,
+				E1560ABE27F32DC40039B80F /* CustomHeaderView.xib */,
+			);
+			path = "TableView Cell";
+			sourceTree = "<group>";
+		};
+		E1D9556027F1CE1A004F8FA5 = {
+			isa = PBXGroup;
+			children = (
+				E1D9556B27F1CE1A004F8FA5 /* Radius */,
+				E1D9558527F1CE1D004F8FA5 /* RadiusTests */,
+				E1D9558F27F1CE1D004F8FA5 /* RadiusUITests */,
+				E1D9556A27F1CE1A004F8FA5 /* Products */,
+				3EF09DBF11D719E80F983224 /* Pods */,
+				2823D0D77438D735474ACF4C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E1D9556A27F1CE1A004F8FA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9556927F1CE1A004F8FA5 /* Radius.app */,
+				E1D9558227F1CE1D004F8FA5 /* RadiusTests.xctest */,
+				E1D9558C27F1CE1D004F8FA5 /* RadiusUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E1D9556B27F1CE1A004F8FA5 /* Radius */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9557D27F1CE1C004F8FA5 /* Info.plist */,
+				E1D955A727F229C8004F8FA5 /* AppDelegate */,
+				E1D955A327F2299B004F8FA5 /* Modules */,
+				E1D955A827F229F1004F8FA5 /* SupportFiles */,
+				E1D955AB27F22AB3004F8FA5 /* Managers */,
+			);
+			path = Radius;
+			sourceTree = "<group>";
+		};
+		E1D9558527F1CE1D004F8FA5 /* RadiusTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9558627F1CE1D004F8FA5 /* RadiusTests.swift */,
+			);
+			path = RadiusTests;
+			sourceTree = "<group>";
+		};
+		E1D9558F27F1CE1D004F8FA5 /* RadiusUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9559027F1CE1D004F8FA5 /* RadiusUITests.swift */,
+				E1D9559227F1CE1D004F8FA5 /* RadiusUITestsLaunchTests.swift */,
+			);
+			path = RadiusUITests;
+			sourceTree = "<group>";
+		};
+		E1D955A327F2299B004F8FA5 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E1D955A627F229B6004F8FA5 /* View */,
+				E1D955A427F229A1004F8FA5 /* Model */,
+				E1D955A527F229A7004F8FA5 /* ViewModel */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E1D955A427F229A1004F8FA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9559F27F1CE5E004F8FA5 /* PropertiesModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E1D955A527F229A7004F8FA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E1D955A127F1CE6A004F8FA5 /* PropertiesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E1D955A627F229B6004F8FA5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E1560ABB27F31C480039B80F /* TableView Cell */,
+				E1D9557027F1CE1A004F8FA5 /* ViewController.swift */,
+				E1D9557227F1CE1A004F8FA5 /* Main.storyboard */,
+				E1560AB927F31C080039B80F /* TableView+ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E1D955A727F229C8004F8FA5 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9556C27F1CE1A004F8FA5 /* AppDelegate.swift */,
+				E1D9556E27F1CE1A004F8FA5 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E1D955A827F229F1004F8FA5 /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E1D9557827F1CE1C004F8FA5 /* Assets.xcassets */,
+				E1D9557A27F1CE1C004F8FA5 /* LaunchScreen.storyboard */,
+				E1D9557527F1CE1A004F8FA5 /* Radius.xcdatamodeld */,
+			);
+			path = SupportFiles;
+			sourceTree = "<group>";
+		};
+		E1D955AB27F22AB3004F8FA5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				E1D955AC27F22ABE004F8FA5 /* NetworkManager */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		E1D955AC27F22ABE004F8FA5 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				E1D955A927F22AA8004F8FA5 /* NetworkManager.swift */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E1D9556827F1CE1A004F8FA5 /* Radius */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D9559627F1CE1D004F8FA5 /* Build configuration list for PBXNativeTarget "Radius" */;
+			buildPhases = (
+				72CB12C4CBE1B68B84E87F98 /* [CP] Check Pods Manifest.lock */,
+				E1D9556527F1CE1A004F8FA5 /* Sources */,
+				E1D9556627F1CE1A004F8FA5 /* Frameworks */,
+				E1D9556727F1CE1A004F8FA5 /* Resources */,
+				91153E534D4409945EAFD27D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Radius;
+			productName = Radius;
+			productReference = E1D9556927F1CE1A004F8FA5 /* Radius.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E1D9558127F1CE1D004F8FA5 /* RadiusTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D9559927F1CE1D004F8FA5 /* Build configuration list for PBXNativeTarget "RadiusTests" */;
+			buildPhases = (
+				9914C22208723DFEEA75214C /* [CP] Check Pods Manifest.lock */,
+				E1D9557E27F1CE1D004F8FA5 /* Sources */,
+				E1D9557F27F1CE1D004F8FA5 /* Frameworks */,
+				E1D9558027F1CE1D004F8FA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D9558427F1CE1D004F8FA5 /* PBXTargetDependency */,
+			);
+			name = RadiusTests;
+			productName = RadiusTests;
+			productReference = E1D9558227F1CE1D004F8FA5 /* RadiusTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E1D9558B27F1CE1D004F8FA5 /* RadiusUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1D9559C27F1CE1D004F8FA5 /* Build configuration list for PBXNativeTarget "RadiusUITests" */;
+			buildPhases = (
+				ACD91B7FD2AB93C8F6BFB3B5 /* [CP] Check Pods Manifest.lock */,
+				E1D9558827F1CE1D004F8FA5 /* Sources */,
+				E1D9558927F1CE1D004F8FA5 /* Frameworks */,
+				E1D9558A27F1CE1D004F8FA5 /* Resources */,
+				8B91EE7D57BC0EDC29620A9D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1D9558E27F1CE1D004F8FA5 /* PBXTargetDependency */,
+			);
+			name = RadiusUITests;
+			productName = RadiusUITests;
+			productReference = E1D9558C27F1CE1D004F8FA5 /* RadiusUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E1D9556127F1CE1A004F8FA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					E1D9556827F1CE1A004F8FA5 = {
+						CreatedOnToolsVersion = 13.3;
+					};
+					E1D9558127F1CE1D004F8FA5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = E1D9556827F1CE1A004F8FA5;
+					};
+					E1D9558B27F1CE1D004F8FA5 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = E1D9556827F1CE1A004F8FA5;
+					};
+				};
+			};
+			buildConfigurationList = E1D9556427F1CE1A004F8FA5 /* Build configuration list for PBXProject "Radius" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E1D9556027F1CE1A004F8FA5;
+			productRefGroup = E1D9556A27F1CE1A004F8FA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E1D9556827F1CE1A004F8FA5 /* Radius */,
+				E1D9558127F1CE1D004F8FA5 /* RadiusTests */,
+				E1D9558B27F1CE1D004F8FA5 /* RadiusUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E1D9556727F1CE1A004F8FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1560ABF27F32DC40039B80F /* CustomHeaderView.xib in Resources */,
+				E1560AB827F310290039B80F /* PropertiesTableViewCell.xib in Resources */,
+				E1D9557C27F1CE1C004F8FA5 /* LaunchScreen.storyboard in Resources */,
+				E1D9557927F1CE1C004F8FA5 /* Assets.xcassets in Resources */,
+				E1D9557427F1CE1A004F8FA5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D9558027F1CE1D004F8FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D9558A27F1CE1D004F8FA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		72CB12C4CBE1B68B84E87F98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Radius-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B91EE7D57BC0EDC29620A9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Radius-RadiusUITests/Pods-Radius-RadiusUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Radius-RadiusUITests/Pods-Radius-RadiusUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Radius-RadiusUITests/Pods-Radius-RadiusUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		91153E534D4409945EAFD27D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Radius/Pods-Radius-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Radius/Pods-Radius-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Radius/Pods-Radius-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9914C22208723DFEEA75214C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RadiusTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACD91B7FD2AB93C8F6BFB3B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Radius-RadiusUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E1D9556527F1CE1A004F8FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1560ABD27F32DB60039B80F /* CustomHeaderView.swift in Sources */,
+				E1560AB727F310290039B80F /* PropertiesTableViewCell.swift in Sources */,
+				E1D9557127F1CE1A004F8FA5 /* ViewController.swift in Sources */,
+				E1D955A227F1CE6A004F8FA5 /* PropertiesViewModel.swift in Sources */,
+				E1560ABA27F31C080039B80F /* TableView+ViewController.swift in Sources */,
+				E1D9556D27F1CE1A004F8FA5 /* AppDelegate.swift in Sources */,
+				E1D955AA27F22AA8004F8FA5 /* NetworkManager.swift in Sources */,
+				E1D955A027F1CE5E004F8FA5 /* PropertiesModel.swift in Sources */,
+				E1D9556F27F1CE1A004F8FA5 /* SceneDelegate.swift in Sources */,
+				E1D9557727F1CE1A004F8FA5 /* Radius.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D9557E27F1CE1D004F8FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D9558727F1CE1D004F8FA5 /* RadiusTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1D9558827F1CE1D004F8FA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1D9559327F1CE1D004F8FA5 /* RadiusUITestsLaunchTests.swift in Sources */,
+				E1D9559127F1CE1D004F8FA5 /* RadiusUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1D9558427F1CE1D004F8FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D9556827F1CE1A004F8FA5 /* Radius */;
+			targetProxy = E1D9558327F1CE1D004F8FA5 /* PBXContainerItemProxy */;
+		};
+		E1D9558E27F1CE1D004F8FA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1D9556827F1CE1A004F8FA5 /* Radius */;
+			targetProxy = E1D9558D27F1CE1D004F8FA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E1D9557227F1CE1A004F8FA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D9557327F1CE1A004F8FA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E1D9557A27F1CE1C004F8FA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E1D9557B27F1CE1C004F8FA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E1D9559427F1CE1D004F8FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E1D9559527F1CE1D004F8FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E1D9559727F1CE1D004F8FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0738DE700329CF8E0EBC3456 /* Pods-Radius.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Radius/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRK.Radius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E1D9559827F1CE1D004F8FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 246EEFCFD93ECE2914256C02 /* Pods-Radius.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Radius/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRK.Radius;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1D9559A27F1CE1D004F8FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81CEE530A7A7B232B2F4E7CD /* Pods-RadiusTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRK.RadiusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radius.app/Radius";
+			};
+			name = Debug;
+		};
+		E1D9559B27F1CE1D004F8FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7BAECF54F6CBC5C4B9EB66A /* Pods-RadiusTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRK.RadiusTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Radius.app/Radius";
+			};
+			name = Release;
+		};
+		E1D9559D27F1CE1D004F8FA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEE3D85C55CED22E1A83B336 /* Pods-Radius-RadiusUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRK.RadiusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Radius;
+			};
+			name = Debug;
+		};
+		E1D9559E27F1CE1D004F8FA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABA3A789EDE8207A95CF7AC /* Pods-Radius-RadiusUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SRK.RadiusUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Radius;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E1D9556427F1CE1A004F8FA5 /* Build configuration list for PBXProject "Radius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D9559427F1CE1D004F8FA5 /* Debug */,
+				E1D9559527F1CE1D004F8FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D9559627F1CE1D004F8FA5 /* Build configuration list for PBXNativeTarget "Radius" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D9559727F1CE1D004F8FA5 /* Debug */,
+				E1D9559827F1CE1D004F8FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D9559927F1CE1D004F8FA5 /* Build configuration list for PBXNativeTarget "RadiusTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D9559A27F1CE1D004F8FA5 /* Debug */,
+				E1D9559B27F1CE1D004F8FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1D9559C27F1CE1D004F8FA5 /* Build configuration list for PBXNativeTarget "RadiusUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1D9559D27F1CE1D004F8FA5 /* Debug */,
+				E1D9559E27F1CE1D004F8FA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E1D9557527F1CE1A004F8FA5 /* Radius.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E1D9557627F1CE1A004F8FA5 /* Radius.xcdatamodel */,
+			);
+			currentVersion = E1D9557627F1CE1A004F8FA5 /* Radius.xcdatamodel */;
+			path = Radius.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E1D9556127F1CE1A004F8FA5 /* Project object */;
+}

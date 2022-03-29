@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomHeaderView" customModule="Radius" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="605" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-j9-hdX">
+                    <rect key="frame" x="0.0" y="0.0" width="605" height="110"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Section Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gss-vc-uY7">
+                            <rect key="frame" x="30" y="43" width="545" height="24"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                            <color key="textColor" red="0.078431372549019607" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Gss-vc-uY7" firstAttribute="leading" secondItem="fOb-j9-hdX" secondAttribute="leading" constant="30" id="DUM-mf-WkC"/>
+                        <constraint firstItem="Gss-vc-uY7" firstAttribute="centerY" secondItem="fOb-j9-hdX" secondAttribute="centerY" id="GQY-zJ-rS3"/>
+                        <constraint firstItem="Gss-vc-uY7" firstAttribute="centerX" secondItem="fOb-j9-hdX" secondAttribute="centerX" id="k48-EK-19b"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fOb-j9-hdX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ba3-F8-if2"/>
+                <constraint firstAttribute="bottom" secondItem="fOb-j9-hdX" secondAttribute="bottom" id="gZ2-BR-WE0"/>
+                <constraint firstItem="fOb-j9-hdX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="wA3-YP-ioN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fOb-j9-hdX" secondAttribute="trailing" id="zrc-EQ-EYS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="sectionTitleLabel" destination="Gss-vc-uY7" id="Ewj-Rt-iJo"/>
+            </connections>
+            <point key="canvasLocation" x="306.52173913043481" y="-33.482142857142854"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
